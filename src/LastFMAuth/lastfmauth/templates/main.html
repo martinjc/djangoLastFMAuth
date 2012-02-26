@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if lastfmuser %}
+        <h1>Welcome {{lastfmuser.user.username}}!</h1>
+        <p> Click <a href="http://127.0.0.1:8000/logout/">here</a> to logout<p>
+    {% else %}
+        <h1>Welcome!</h1>
+        <p> Click <a href="http://127.0.0.1:8000/auth/">login with last.fm</a> to begin.</p>
+    {% endif %}
+{% endblock %}
