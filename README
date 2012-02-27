@@ -1,0 +1,5 @@
+DjangoLastFMAuth is a basic implementation of a Django project incorporating an application handling authentication with Last.FM.
+
+It includes a simple API wrapper for making queries to the Last.FM web services, handling simple unauthed calls and calls that require authentication and signing.
+
+To try it out just add your Last.FM API key to 'views.py' and run the server. You can login with last.fm, which will create a local user with user information returned from the 'user.getinfo' last.fm web service. This user is automatically logged in to the site.
